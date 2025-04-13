@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="screen">
+            <!-- history button-->
+             <!----
+            <button onclick="toggleHistory()" style="margin-top: 10px;">Show History</button>
+
+            <div id="historyContainer" style="display: none; margin-top: 20px;">
+                <h3>History</h3>
+                <ul id="historyList" style="list-style-type: none; padding: 0;"></ul>
+                <button onclick="clearHistory()" style="margin-top: 10px;">Clear History</button>
+            </div> -->
+            
+            <input type="text" class="mr-jaz" id="display" disabled>
+
+
+            
+        </div>
+        <div class="buttons">
+            <!-- -- yauwa wannan sun gama aiki basu da ampani ----------------------<-
+            <button class="button func" onclick="appendToScreen('sin(')">sin</button>
+            <button class="button func" onclick="appendToScreen('cos(')">cos</button>
+            <button class="button func" onclick="appendToScreen('tan(')">tan</button>
+            <button class="button func" onclick="appendToScreen('sqrt(')">√</button> -->
+            <button class="button clear" onclick="clearScreen()">C</button>
+            <button class="button func" onclick="scientificFunction('sin')">sin</button>
+            <button class="button func" onclick="scientificFunction('cos')">cos</button>
+            <button class="button func" onclick="scientificFunction('tan')">tan</button>
+            <button class="button func" onclick="scientificFunction('sqrt')">√</button>
+
+            <button class="button func" onclick="scientificFunction('log')">log</button>
+
+            <button class="button func" onclick="square()">x²</button>
+            <button class="button func" onclick="appendToScreen('**')">xʸ</button>
+
+
+            <button class="button func" onclick="appendToScreen('log(')">log</button>
+            <button class="button func" onclick="appendToScreen('(')">(</button>
+            <button class="button func" onclick="appendToScreen(')')">)</button>
+        
+            <button class="button" onclick="appendToScreen('7')">7</button>
+            <button class="button" onclick="appendToScreen('8')">8</button>
+            <button class="button" onclick="appendToScreen('9')">9</button>
+            <button class="button operator" onclick="appendToScreen('/')">/</button>
+            
+            <button class="button" onclick="appendToScreen('4')">4</button>
+            <button class="button" onclick="appendToScreen('5')">5</button>
+            <button class="button" onclick="appendToScreen('6')">6</button>
+            <button class="button operator" onclick="appendToScreen('*')">*</button>
+
+            <button class="button" onclick="appendToScreen('1')">1</button>
+            <button class="button" onclick="appendToScreen('2')">2</button>
+            <button class="button" onclick="appendToScreen('3')">3</button>
+            <button class="button operator" onclick="appendToScreen('-')">-</button>
+
+            <button class="button" onclick="appendToScreen('0')">0</button>
+            <button class="button" onclick="appendToScreen('.')">.</button>
+            <button class="button operator" onclick="calculate()">=</button>
+            <button class="button operator" onclick="appendToScreen('+')">+</button>
+            <button class="button delete" onclick="deleteLast()">del</button>
+
+
+            </div>
+           
+            
+    </div>
+
+    <script src="calculator.js"></script>
+
+    
+</body>
+</html>
